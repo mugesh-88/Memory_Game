@@ -28,7 +28,7 @@ function buildTile(color){
 
         const colorToMatch=activeTile.getAttribute("data-color");
 
-        if(colorToMatch===color){
+        if(colorToMatch === color && activeTile !== tileElement){
             activeTile=null;
             awaitingEndOfMove=false;
             revealedCount+=2;
