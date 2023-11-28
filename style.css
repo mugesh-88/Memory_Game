@@ -32,7 +32,7 @@ h1{
 }
 
 .tile:hover{
-    scale:1.05;
+    scale:1.1;
 }
 
 button{
@@ -71,11 +71,22 @@ button:hover{
         margin: 30px auto;
         width:max-content;
         display:grid;
-        grid-template-columns: repeat(4,80px);
+        grid-template-columns: repeat(4,75px);
         gap:10px;
     }
     button{
         padding: 5px;
         margin-top: 30px;
     }
+}
+
+@media (max-height:700px) or (max-width:300){
+    .tiles{
+        grid-template-columns: repeat(4,60px);
+        gap:8px;
+    }
+    .tile{
+        height: 80px;
+    }
+
 }
